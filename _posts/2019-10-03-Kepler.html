@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="Pedro Hiroshi Ely Ito" />
+  <title>Leis de Kepler e a Álgebra Geométrica</title>
+  <style>
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-AMS_CHTML-full" type="text/javascript"></script>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Leis de Kepler e a Álgebra Geométrica</h1>
+<p class="author">Pedro Hiroshi Ely Ito</p>
+<p class="date">Outubro de 2019</p>
+</header>
+<h1 id="álgebra-geométrica">Álgebra Geométrica</h1>
+<p>É comum nas formulações de Mecânica Clássica a utilização da Álgebra Vetorial. O objetivo aqui é fazer uma pequena demostração da Álgebra Geométrica, introduzindo o conceito de Produto Geométrico sem, no entanto, aprofundar muito o assunto da álgebra em si.</p>
+<p>A Álgebra Geométrica se baseia nas Álgebras de Clifford, que são um desenvolvimento da Álgebra de Grassmann(ou Exterior), de onde vêm os produtos interno e exterior. O desenvolvimento dessa álgebra foi um importante passo no entendimento da relação entre a álgebra e a geometria e tem sido amplamente aplicada na Física e na Visão Computacional, além de ser proposta por alguns autores como uma "linguagem unificada para a Física e a Matemática".</p>
+<h2 id="produto-interno-exterior-e-geométrico">Produto Interno, Exterior e Geométrico</h2>
+<p>Definiremos aqui os produtos entre vetores. Os dois primeiros são generalizações dos produtos escalar e vetorial, enquanto o terceiro introduz uma das principais ideias da Álgebra Geométrica: a soma de um escalar e um vetor. Essa ideia se extende para além dos vetores, pois definimos multivetores como a soma de elementos de grau n. Escalares, então, são elementos de grau 0, vetores têm grau 1, bivetores grau 2 e um n-vetor tem grau n.</p>
+<p><b>Definição:</b>(Produto Interno) Dados dois vetores <span class="math inline">\(\vec{a}\)</span> e <span class="math inline">\(\vec{b}\)</span>, definimos o produto interno <span class="math inline">\({\vec{a}\cdot \vec{b}}\)</span> como uma função que associa a dois vetores um escalar que é obtido ao projetar <span class="math inline">\(\vec{a}\)</span> na direção de <span class="math inline">\(\vec{b}\)</span> e então dilatar pela magnitude de <span class="math inline">\(\vec{b}\)</span>.</p>
+<p>Propriedades:</p>
+<p>i)<span class="math inline">\(\vec{a}\cdot\vec{b}\)</span> = <span class="math inline">\(\vec{b}\cdot\vec{a}\)</span></p>
+<p>ii)<span class="math inline">\((\alpha \vec{a})\cdot\vec{b}\)</span> = <span class="math inline">\(\alpha(\vec{a}\cdot\vec{b})\)</span> = <span class="math inline">\(\vec{a}\cdot(\alpha\vec{b})\)</span></p>
+<p>iii)<span class="math inline">\(\vec{a}\cdot(\vec{b}+\vec{c})\)</span> = <span class="math inline">\(\vec{a}\cdot\vec{b} + \vec{a}\cdot\vec{c}\)</span></p>
+<p>iv)<span class="math inline">\(\vec{a}\cdot\vec{b}=0 \iff \vec{a}\bot \vec{b}\)</span></p>
+<p>v)<span class="math inline">\(\vec{a}\cdot\vec{b} = |a||b|cos(\theta)\)</span></p>
+<p><b>Definição:</b>(Produto Exterior) Dados dois vetores <span class="math inline">\(\vec{a}\)</span> e <span class="math inline">\(\vec{b}\)</span>, definimos o produto exterior <span class="math inline">\(\vec{a}\wedge\vec{b}\)</span> como o segmento orientado de plano(bivetor) formado ao "varrer <span class="math inline">\(\vec{a}\)</span> ao longo de <span class="math inline">\(\vec{b}\)</span>". A orientação é exemplificada na figura 1: ao fazer <span class="math inline">\(\vec{a}\wedge\vec{b}\)</span> obtemos uma área orienta no sentido anti-horário, ao fazer <span class="math inline">\(\vec{b}\wedge\vec{a}\)</span>, obtemos uma orientação no sentido horário.<br />
+</p>
+<figure>
+<img src="/assets/wedge.png" style="width:40.0%" alt="" /><figcaption>figura 1: <span class="math inline">\(\vec{a}\wedge\vec{b}\)</span></figcaption>
+</figure>
+<p>Propriedades:</p>
+<p>i)<span class="math inline">\(\vec{b}\wedge\vec{a} = -\vec{a}\wedge\vec{b}\)</span></p>
+<p>ii)<span class="math inline">\(\vec{b}\wedge\vec{a} = \vec{a}\wedge(\vec{-b}) = (\vec{-a})\wedge(\vec{-b}) = (\vec{-a})\wedge\vec{b}\)</span></p>
+<p>iii)<span class="math inline">\(|B| = |\vec{a}\wedge\vec{b}| = |\vec{b}\wedge\vec{a}| = |a||b|sen(\theta)\)</span></p>
+<p>iv)<span class="math inline">\(\lambda(\vec{a}\wedge\vec{b}) = (\lambda\vec{a})\wedge\vec{b} = \vec{a}\wedge(\vec{b})\)</span><br />
+Ao fazer o produto exterior entre três vetores, obtemos um volume orientado. O que será que acontece quando fizermos o mesmo com n vetores? Reflita.</p>
+<p><b>Definição:</b>(Produto Geométrico) Dados dois vetores <span class="math inline">\(\vec{a}\)</span> e <span class="math inline">\(\vec{b}\)</span>, definimos o produto geométrico como <span class="math inline">\(\vec{a}\vec{b}=\vec{a}\wedge\vec{b} + \vec{a}\cdot\vec{b}\)</span>.</p>
+<p>Propriedades:</p>
+<p>i)<span class="math inline">\(\vec{b}\vec{a} = \vec{b}\wedge\vec{a} + \vec{b}\cdot{a} = -\vec{a}\wedge\vec{b} + \vec{a}\cdot\vec{b}\)</span></p>
+<p>ii)<span class="math inline">\(\vec{a}(\vec{b}+\vec{c}) = \vec{a}\vec{b} + \vec{a}\vec{c}\)</span></p>
+<p>iii)<span class="math inline">\((\vec{b}+\vec{c})\vec{a} = \vec{b}\vec{a} + \vec{c}\vec{a}\)</span></p>
+<p>iv)<span class="math inline">\(\lambda\vec{a}\vec{b} = (\lambda\vec{a})\vec{b} = \vec{a}(\lambda\vec{b})\)</span></p>
+<p>v)<span class="math inline">\(\vec{a}(\vec{b}\vec{c}) = (\vec{a}\vec{b})\vec{c} = \vec{a}\vec{b}\vec{c}\)</span><br />
+Esse produto pode parecer um tanto exótico. Podemos pensar nele como tendo uma parte escalar e uma parte vetorial, assim como um número complexo tem uma parte real e uma parte imaginária.</p>
+<p>Prove as propriedades apresentadas.</p>
+<p>Crie uma nova definição para os Produtos Interno e Externo utilizando o Produto Geométrico(dica: use a definição e a propriedade i) do Produto Geométrico).</p>
+<h1 id="as-leis-de-kepler">As Leis de Kepler</h1>
+<h2 id="o-problema-de-kepler">O Problema de Kepler</h2>
+<p>Trataremos a interação gravitacional entre dois corpos de massa <span class="math inline">\(m_1\)</span> e <span class="math inline">\(m_2\)</span>, vetores posição <span class="math inline">\(\vec{r}_1\)</span> e <span class="math inline">\(\vec{r}_2\)</span> e posição relativa <span class="math inline">\(\vec{r}\)</span>.</p>
+<p><span>l</span><span>0.25</span> <img src="/assets/2-body.png" style="width:25.0%" alt="image" /></p><figcaption><b>figura 2:</b> O Problema de Kepler </figcaption>
+<p>Em particular, vamos considerar que existe apenas a força central <span class="math inline">\(\vec{F} = -\frac{k}{r^2}\hat{r}\)</span></p>
+<h2 id="momento-angular">Momento Angular</h2>
+<p>Na Álgebra Vetorial, definimos o momento angular como <span class="math inline">\(L = \vec{r}\times\vec{p}\)</span>. Naturalmente, usaremos o produto exterior em seu lugar.</p>
+<p><b>Definição:</b>(Momento Angular) <span class="math inline">\(\vec{L} = \vec{r}\wedge\vec{p}\)</span></p>
+<p>Com essa definição podemos provar a Segunda Lei de Kepler. Mas antes, uma lei de conservação:</p>
+<p><b>Teorema:</b>(Conservação do Momento Angular) Em um sistema em que agem apenas forças centrais, o momento angular é conservado.</p>
+<p><b>Prova:</b> Derivando o momento angular no tempo: <span class="math display">\[\begin{aligned}
+\frac{d\vec{L}}{dt} &amp;= \frac{d\vec{r}}{dt}\wedge\vec{p} + \vec{r}\wedge\frac{d\vec{p}}{dt}\\
+\frac{d\vec{L}}{dt} &amp;= {\vec{v}}\wedge(m\vec{v}) + \vec{r}\wedge\frac{d(m\vec{v})}{dt}\\
+\frac{d\vec{L}}{dt} &amp;= m(\vec{v}\wedge\vec{v}) + \vec{r}\wedge m\frac{d\vec{v}}{dt}\\
+\frac{d\vec{L}}{dt} &amp;= \vec{r}\wedge m\frac{d\vec{v}}{dt}\\
+\frac{d\vec{L}}{dt} &amp;= \vec{r}\wedge\vec{F}\end{aligned}\]</span> Se as forças forem centrais, ou seja, estiverem na mesma direção de <span class="math inline">\(\vec{r}\)</span>, então: <span class="math display">\[\frac{d\vec{L}}{dt}=0\]</span> O momento angular se conserva!</p>
+<p><b>Teorema:</b>(Segunda Lei de Kepler) O vetor <span class="math inline">\(\vec{r}\)</span> <em>varre</em> áreas iguais em períodos iguais.</p>
+<p><b>Prova:</b> Suponha um deslocamento infinitesimal <span class="math inline">\(\vec{dr} = \vec{v}dt\)</span> e tome o produto exterior por <span class="math inline">\(\vec{r}\)</span>.</p>
+<figure>
+<img src="/assets/elem_area.png" style="width:40.0%" alt="" /><figcaption><b>figura 3:</b> Desolacamento infinitesimal</figcaption>
+</figure>
+<p><span class="math display">\[\begin{aligned}
+\vec{r}\wedge\vec{v}dt &amp;= \text{área do paralelogramo}\\
+d\vec{A} &amp;= \frac{1}{2}\vec{r}\wedge\vec{v}dt\\
+\frac{d\vec{A}}{dt} &amp;= \frac{1}{2}\vec{r}\wedge\vec{v}\\
+\frac{d\vec{A}}{dt} &amp;= \frac{1}{2}\frac{\vec{L}}{m}\end{aligned}\]</span></p>
+<p>Pela Conservação do Momento Angular, a variação da área varrida pelo vetor <span class="math inline">\(\vec{r}\)</span> é a mesma para intervalos de tempo iguais.(é só integrar!)</p>
+<p>Note que <span class="math inline">\(\vec{dA}\)</span> é um bivetor cuja magnitude é a área do paralelogramo definido por <span class="math inline">\(\vec{a}\)</span> e <span class="math inline">\(\vec{b}\)</span>. Na geometria analítica, aprendemos sobre o produto vetorial, que associa um terceiro vetor, ortogonal ao plano que contém <span class="math inline">\(\vec{a}\)</span> e <span class="math inline">\(\vec{b}\)</span>. Essa definição funciona bem em espaços vetoriais de dimensão 3 e 7(os casos de dimensão 0 e 1 são triviais), mas não é bem definido em outras. Pense, por exemplo, no plano: não há como definir o produto vetorial para quaisquer dois vetores, não existe uma direção ortogonal! Em dimensões mais altas, não é possível determinar um vetor único que satisfaça a definição.</p>
+<p><b>Teorema:</b>(Primeira Lei de Kepler) O vetor <span class="math inline">\(\vec{r}\)</span> descreve uma elipse.</p>
+<p><b>Prova:</b> Poderíamos tentar resolver a EDO que descreve o sistema, mas aqui tormaremos outra abordagem. Vamos começar reescrevendo o momento angular de outra forma. <span class="math display">\[\begin{aligned}
+\vec{L} &amp;= \vec{r}\wedge\vec{p} = m\vec{r}\wedge\vec{v}\\
+\vec{L} &amp;= mr\hat{r}\wedge(\dot{r}\hat{r}+r\dot{\hat{r}})\\
+\vec{L} &amp;= mr^2\hat{r}\dot{\hat{r}}\\\end{aligned}\]</span> E voltamos para a equação da força: <span class="math display">\[\begin{aligned}
+\vec{F} &amp;= -\frac{k}{r^2}\hat{r}\\
+\frac{d\vec{v}}{dt} &amp;= -\frac{k}{mr^2}\hat{r}\\\end{aligned}\]</span> Agora, tomemos o produto geométrico por <span class="math inline">\(\vec{L}\)</span>: <span class="math display">\[\begin{aligned}
+\vec{L}\dot{\vec{v}} &amp;= (mr^2\hat{r}\dot{\hat{r}})(-\frac{k}{mr^2}\hat{r})\\
+\vec{L}\dot{\vec{v}} &amp;= -k\hat{r}\dot{\hat{r}}\hat{r}\\\end{aligned}\]</span> Observe que: <span class="math display">\[\begin{aligned}
+\frac{d}{dt}(\hat{r}\cdot\hat{r}) &amp;= \dot{\hat{r}}\cdot\hat{r} + \hat{r}\cdot\dot{\hat{r}} = 0 \\
+\dot{\hat{r}}\cdot\hat{r} &amp;= 0 \\\end{aligned}\]</span> Logo, <span class="math display">\[\begin{aligned}
+\vec{L}\dot{\vec{v}} &amp;= k\dot{\hat{r}}\hat{r}\hat{r}\\
+\vec{L}\dot{\vec{v}} &amp;= k\dot{\hat{r}}\\
+\vec{L}\dot{\vec{v}} &amp;- k\dot{\hat{r}}=0\\
+\frac{d}{dt}(\vec{L}\vec{v} &amp;- k\hat{r}) = 0\\\end{aligned}\]</span> *caso você não tenha entendido essa passagem, volte para as propriedades: quando é possível mudar a ordem do produto geométrico?</p>
+<p>Conseguimos aqui o Vetor de Laplace-Runge-Lenz(que é consideravelmente mais complicado de se obter com álgebra vetorial, além da sua conservação. Seguindo a demonstração: <span class="math display">\[\begin{aligned}
+\vec{L}\vec{v} &amp;- k\hat{r} = \vec{c} \text{, produto geométrico por $k\vec{r}$:}\\
+\vec{L}\vec{v}k\vec{r} &amp;- k\hat{r}k\vec{r} = \vec{c}k\vec{r}\\
+\vec{L}\vec{v}\vec{r} &amp;- k\hat{r}\vec{r} = \vec{c}\vec{r}\\
+\vec{L}(\vec{v}\wedge\vec{r} + \vec{v}\cdot\vec{r})&amp;- k|\vec{r}| = \vec{c}\wedge\vec{r}+ \vec{c}\cdot\vec{r}\\
+\vec{L}(\vec{v}\wedge\vec{r} + \vec{v}\cdot\vec{r})&amp;- k|\vec{r}| = \vec{c}\wedge\vec{r}+ \vec{c}\cdot\vec{r}\\
+\vec{L}\frac{\vec{L}}{m} + \vec{L}(\vec{v}\cdot\vec{r})&amp;- k|\vec{r}| = \vec{c}\wedge\vec{r}+ \vec{c}\cdot\vec{r}\\
+\frac{l^2}{m} + \vec{L}(\vec{v}\cdot\vec{r}) &amp;- k|\vec{r}| = \vec{c}\wedge\vec{r}+ \vec{c}\cdot\vec{r}\\
+\frac{l^2}{m} + \vec{L}(\vec{v}\cdot\vec{r}) &amp;- k|\vec{r}| =\vec{c}\wedge\vec{r}+ |\vec{c}||\vec{r}|cos(\theta)\\\end{aligned}\]</span> Onde: <span class="math display">\[\begin{aligned}
+\vec{L}\vec{L} &amp;= \vec{L}\wedge\vec{L} + \vec{L}\cdot\vec{L}\\
+\vec{L}\vec{L}&amp;=\vec{L}\cdot\vec{L}\\
+\vec{L}\vec{L}&amp;=l^2\end{aligned}\]</span> (O produto geométrico entre um vetor e ele mesmo é sempre um escalar!)</p>
+<p>Vamos igualar as partes escalares: <span class="math display">\[\begin{aligned}
+\frac{l^2}{m} - k|\vec{r}| = |\vec{c}||\vec{r}|cos(\theta)\\
+|\vec{r}|(k + |\vec{c}|cos(\theta)) = \frac{l^2}{m}\\
+|\vec{r}| = \frac{\frac{l^2}{m}}{(k + |\vec{c}|cos(\theta))}\\
+|\vec{r}| = \frac{\frac{l^2}{m}}{k(1 + \frac{|\vec{c}|}{k}cos(\theta))}\\
+\frac{|\vec{c}|}{k} = e \text{ (excentricidade), }\frac{l^2}{mk} = p\\ 
+|\vec{r}| = \frac{p}{(1 + ecos(\theta))}\\\end{aligned}\]</span> Que é a equação que descreve uma cônica com um foco na origem! No caso, vamos trabalhar com a elipse.</p>
+<figure>
+<img src="/assets/elipse.png" style="width:50.0%" alt="" /><figcaption><b>figura 4:</b> A elipse</figcaption>
+</figure>
+<p><b>Teorema:</b>(Terceira Lei de Kepler) <span class="math inline">\(\frac{T^2}{a^3} = cte\)</span>, isto é, o quadrado do período é proporcional ao cubo do semi-eixo maior da elipse.</p>
+<p><b>Prova:</b> Da Segunda Lei de Kepler: <span class="math display">\[\begin{aligned}
+\frac{d\vec{A}}{dt} &amp;= \frac{1}{2}\frac{\vec{L}}{m}\\\end{aligned}\]</span> aqui nos interessa apenas o módulo do bivetor: <span class="math display">\[\begin{aligned}
+\frac{d{A}}{dt} &amp;= \frac{1}{2}\frac{\vec{|L|}}{m}\\
+\frac{d{A}}{dt} &amp;= \frac{1}{2}\frac{l}{m}\\\end{aligned}\]</span> sendo A a área da elipse e T o período de translação: <span class="math display">\[\begin{aligned}
+\int_{0}^{A}dA &amp;= \int_{0}^{T}\frac{1}{2}\frac{l}{m}dt\\
+\pi ab &amp;=  \frac{1}{2}\frac{l}{m}T\\
+2\pi ab &amp;=  \frac{l}{m}T\\
+4\pi^2 a^2b^2 &amp;= \frac{l^2}{m}^2T^2\\\end{aligned}\]</span> numa elipse, <span class="math inline">\(p = \frac{b^2}{a}\)</span>: <span class="math display">\[\begin{aligned}
+4\pi^2 a^3p &amp;= pkT^2\\
+4\pi^2 a^3 &amp;= kT^2\\
+\frac{T^2}{a^3} &amp;= \frac{4\pi^2}{k} = cte\end{aligned}\]</span></p>
+<p>Encontre a energia mecânica do sistema em função de <span class="math inline">\(m\)</span> e <span class="math inline">\(l\)</span>.</p>
+<p><em>New Foundations for Classical Mechanics</em> -David Hestenes.<br />
+<em>Geometric Algebra</em> -Eric Chisolm<br />
+<em>Geometric Algebra(Youtube)</em> -Mathoma</p>
+</body>
+</html>
