@@ -1,18 +1,9 @@
 ---
 layout: page
-title: About
-permalink: /about/
+title: Sobre
+permalink: /Sobre/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
-
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
-
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
-
-
-[jekyll-organization]: https://github.com/jekyll
+Olá, eu sou o Buda, menos conhecido como Pedro. Faço Matemática Aplicada e Computação Científica no ICMC-USP e criei esse blog
+para compartilhar coisas que eu fizer no futuro. Atualmente tenho me interessado por Álgebra Geométrica!
+Faço parte do [CAIFSC](https://www.facebook.com/caifsc/) e do [GEPAC](gepac.github.io).
