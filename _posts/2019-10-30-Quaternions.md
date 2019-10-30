@@ -35,7 +35,7 @@ Assim como no $$\mathbb{R^2}$$, a parte par, $$\mathbb{Cl_3}$$, forma uma subalg
 
 ## A subalgebra $$\mathbb{Cl_3^+}$$
 
-Os elementos dessa subalgebra geram o subespaço $$\{a+be_{12}+ce_{23}+de_{13} | a,b,c,d \in \mathbb{R}$$\}, de forma que:
+Os elementos dessa subalgebra geram o subespaço $$\{a+be_{12}+ce_{23}+de_{13} | a,b,c,d \in \mathbb{R}\}$$, de forma que:
 
 $$
 \begin{align*}
