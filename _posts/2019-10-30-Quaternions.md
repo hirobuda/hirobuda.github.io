@@ -35,7 +35,7 @@ Assim como no $$\mathbb{R^2}$$, a parte par, $$\mathbb{Cl_3}$$, forma uma subalg
 
 ## A subalgebra $$\mathbb{Cl_3^+}$$
 
-Os elementos dessa subalgebra geram o subespaço {$$a+be_{12}+ce_{23}+de_{13} | a,b,c,d \in \mathbb{R}$$}, de forma que:
+Os elementos dessa subalgebra geram o subespaço $$\{a+be_{12}+ce_{23}+de_{13} | a,b,c,d \in \mathbb{R}$$\}, de forma que:
 
 $$
 \begin{align*}
@@ -56,7 +56,7 @@ O centro de um espaço é o subconjunto dos elementos que comutam com quaisquer 
 
 ## Enfim, os Quaternions
 
-Os Quaternions são definidos pelo conjunto $$\mathbb{H}={$$a+bi+cj+dk|a,b,c,d\in \mathbb{R}$$} onde vale que $$ij=k=-ji$$, $$jk = i=-kj$$ e $$ki=j=-ik$$  e $$i^2=j^2=k^2=ijk=-1$$. Leitores razoavelmente atentos perceberão que existe uma correspondência entre $$\mathbb{H}$$ e $$\mathbb{Cl_3}$$.
+Os Quaternions são definidos pelo conjunto $$\mathbb{H}=\{a+bi+cj+dk|a,b,c,d\in \mathbb{R}\}$$ onde vale que $$ij=k=-ji$$, $$jk = i=-kj$$ e $$ki=j=-ik$$  e $$i^2=j^2=k^2=ijk=-1$$. Leitores razoavelmente atentos perceberão que existe uma correspondência entre $$\mathbb{H}$$ e $$\mathbb{Cl_3}$$.
 
 | $$\mathbb{H}$$ | $$\mathbb{Cl_3}$$ |
 | -------------- | ----------------- |
