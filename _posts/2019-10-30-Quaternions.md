@@ -5,7 +5,7 @@ title: Quaternions
 
 # Quaternions
 
-Hoje vou abordar a Álgebra Geométrica sobre o  $$R^{3}$$. Mas antes, algumas considerações. Vou mudar um pouco a notação usada, além de possívelmente começar a escrever "Álgebras de Clifford" mais do que "Álgebra Geométrica", ficando mais próximo dos livros que tenho lido. Quando me referir a uma álgebra de clifford no $$R^3$$ , por exemplo, vou usar $$\mathbb{Cl_{3}}$$, além de definir $$e_{i}e_{j}=e_{ij}$$ quando estivermos falando sobre os vetores da base ortonormal. Dito isso, vamos começar.
+Hoje vou abordar a Álgebra Geométrica sobre o  $$\mathbb{R}^{3}$$. Mas antes, algumas considerações. Vou mudar um pouco a notação usada, além de possívelmente começar a escrever "Álgebras de Clifford" mais do que "Álgebra Geométrica", ficando mais próximo dos livros que tenho lido. Quando me referir a uma álgebra de clifford no $$R^3$$ , por exemplo, vou usar $$\mathbb{Cl_{3}}$$, além de definir $$e_{i}e_{j}=e_{ij}$$ quando estivermos falando sobre os vetores da base ortonormal. Dito isso, vamos começar.
 
 ## A Álgebra $$\mathbb{Cl_3}$$
 
@@ -52,7 +52,7 @@ Antes de chegar nos Quaternions(que já estão batendo na porta), vamos analisar
 
 ### O centro do $$\mathbb{Cl_3}$$
 
-O centro de um espaço é o subconjunto dos elementos que comutam com quaisquer outros elementos. No nosso caso, temos os subconjuntos $$\mathbb{R}$$ e $$\bigwedge^3\mathbb{R^3}$$. Ou seja, temos o subespaço {$$x+ye_{123}|x,y\in\mathbb{R}$$}, onde $${e_{123}}^2=-1$$, isto é **o centro do $$\mathbb{Cl_3}$$ é isomorfo ao $$\mathbb{C}$$ !**
+O centro de um espaço é o subconjunto dos elementos que comutam com quaisquer outros elementos. No nosso caso, temos os subconjuntos $$\mathbb{R}$$ e $$\bigwedge^3\mathbb{R^3}$$. Ou seja, temos o subespaço {$$x+ye_{123}|x,y\in\mathbb{R}$$}, onde $${e_{123}}^2=-1$$, isto é **o centro do $\mathbb{Cl_3}$ é isomorfo ao $$\mathbb{C}$$ !**
 
 ## Enfim, os Quaternions
 
