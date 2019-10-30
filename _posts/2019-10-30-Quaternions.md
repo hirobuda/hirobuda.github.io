@@ -45,7 +45,7 @@ Guarde isso no seu coração.
 Antes de chegar nos Quaternions(que já estão batendo na porta), vamos analisar rapidamente outra subalgebra do $$\mathbb{Cl_{3}}$$.
 
 ### O centro do $$\mathbb{Cl_3}$$
-O centro de um espaço é o subconjunto dos elementos que comutam com quaisquer outros elementos. No nosso caso, temos os subconjuntos $$\mathbb{R}$$ e $$\bigwedge^3\mathbb{R^3}$$. Ou seja, temos o subespaço {$$x+ye_{123}|x,y\in\mathbb{R}$$}, onde $${e_{123}}^2=-1$$, isto é **o centro do $\mathbb{Cl_3}$ é isomorfo ao $$\mathbb{C}$$ !**
+O centro de um espaço é o subconjunto dos elementos que comutam com quaisquer outros elementos. No nosso caso, temos os subconjuntos $$\mathbb{R}$$ e $$\bigwedge^3\mathbb{R^3}$$. Ou seja, temos o subespaço {$$x+ye_{123}|x,y\in\mathbb{R}$$}, onde $${e_{123}}^2=-1$$, isto é **o centro do $$\mathbb{Cl_3}$$ é isomorfo ao $$\mathbb{C}$$ !**
 
 ## Enfim, os Quaternions
 Os Quaternions são definidos pelo conjunto $$\mathbb{H}=\{a+bi+cj+dk|a,b,c,d\in \mathbb{R}\}$$ onde vale que $$ij=k=-ji$$, $$jk = i=-kj$$ e $$ki=j=-ik$$  e $$i^2=j^2=k^2=ijk=-1$$. Leitores razoavelmente atentos perceberão que existe uma correspondência entre $$\mathbb{H}$$ e $$\mathbb{Cl_3}$$.
