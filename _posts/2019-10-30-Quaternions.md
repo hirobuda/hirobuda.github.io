@@ -24,7 +24,7 @@ $$\mathbb{Cl_{3}} = \mathbb{R} \bigoplus \mathbb{R^3} \bigoplus \bigwedge^2\math
 
 $$\mathbb{Cl_3^+}=\mathbb{R} \bigoplus \bigwedge^2\mathbb{R^3}, \text{a parte par}$$
 
-$$\mathbb{{Cl_{3}}^{-}}=\mathbb{R^3}\bigoplus \bigwedge^3 \mathbb{R^3}, \text{a parte ímpar}$$
+$$\mathbb{{Cl_{3}}^{-}}=\mathbb{R^3}\bigoplus \bigwedge^3 \mathbb{R^3},\text{a parte ímpar}$$
 
 
 
@@ -36,6 +36,7 @@ Assim como no $$\mathbb{R^2}$$, a parte par, $$\mathbb{Cl_3}$$, forma uma subalg
 ## A subalgebra $$\mathbb{Cl_3^+}$$
 
 Os elementos dessa subalgebra geram o subespaço {$$a+be_{12}+ce_{23}+de_{13} | a,b,c,d \in \mathbb{R}$$}, de forma que:
+
 $$
 \begin{align*}
 {e_{12}}^2&={e_{23}}^2={e_{13}}^{2}=-1 \\
@@ -44,9 +45,10 @@ $$
  e_{13}e_{12}&=e_{23}
 \end{align*}
 $$
+
 Guarde isso no seu coração.
 
-Antes de chegar nos Quaternions(que já estão batendo na porta), vamos analisar rapidamente outra subalgebra do $$\mathbb{Cl_{3}}$$.​
+Antes de chegar nos Quaternions(que já estão batendo na porta), vamos analisar rapidamente outra subalgebra do $$\mathbb{Cl_{3}}$$.
 
 ### O centro do $$\mathbb{Cl_3}$$
 
