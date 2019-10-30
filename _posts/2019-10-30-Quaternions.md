@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Números Complexos 
+title: Quaternions
 ---
 
 # Quaternions
 
-Hoje vou abordar a Álgebra Geométrica sobre o  $R^{3}$. Mas antes, algumas considerações. Vou mudar um pouco a notação usada, além de possívelmente começar a escrever "Álgebras de Clifford" mais do que "Álgebra Geométrica", ficando mais próximo dos livros que tenho lido. Quando me referir a uma álgebra de clifford no $R^3$ , por exemplo, vou usar $\mathbb{Cl_{3}}$, além de definir $e_{i}e_{j}=e_{ij}$ quando estivermos falando sobre os vetores da base ortonormal. Dito isso, vamos começar.
+Hoje vou abordar a Álgebra Geométrica sobre o  $$R^{3}$$. Mas antes, algumas considerações. Vou mudar um pouco a notação usada, além de possívelmente começar a escrever "Álgebras de Clifford" mais do que "Álgebra Geométrica", ficando mais próximo dos livros que tenho lido. Quando me referir a uma álgebra de clifford no $$R^3$$ , por exemplo, vou usar $$\mathbb{Cl_{3}}$$, além de definir $$e_{i}e_{j}=e_{ij}$$ quando estivermos falando sobre os vetores da base ortonormal. Dito isso, vamos começar.
 
-## A Álgebra $\mathbb{Cl_3}$
+## A Álgebra $$\mathbb{Cl_3}$$
 
 Considere a boa e velha base ortonormal do $$R^3$$, $$b=\{e_1,e_2,e_3\}$$. Podemos gerar alguns elementos com essa base e o produto geométrico:
 
@@ -19,13 +19,12 @@ Considere a boa e velha base ortonormal do $$R^3$$, $$b=\{e_1,e_2,e_3\}$$. Podem
 | **$$e_{123}$$**                      | **trivetores** |
 
 Estes 8 elementos geram a **Álgebra de Clifford do $$\mathbb{R^3}$$**. Essa álgebra é a soma direta de duas partes: a parte par(formada por elemento de grau par) e a parte ímpar(formada por elementos de grau ímpar). 
-$$
-\mathbb{Cl_{3}} = \mathbb{R} \bigoplus \mathbb{R^3} \bigoplus \bigwedge^2\mathbb{R^3}\bigoplus \bigwedge^3 \mathbb{R^3} \\
 
-\mathbb{Cl_3^+}=\mathbb{R} \bigoplus \bigwedge^2\mathbb{R^3}, \text{a parte par}\\
+$$\mathbb{Cl_{3}} = \mathbb{R} \bigoplus \mathbb{R^3} \bigoplus \bigwedge^2\mathbb{R^3}\bigoplus \bigwedge^3 \mathbb{R^3}$$
 
-\mathbb{{Cl_{3}}^{-}}=\mathbb{R^3}\bigoplus \bigwedge^3 \mathbb{R^3}, \text{a parte ímpar}\\
-$$
+$$\mathbb{Cl_3^+}=\mathbb{R} \bigoplus \bigwedge^2\mathbb{R^3}, \text{a parte par}$$
+
+$$\mathbb{{Cl_{3}}^{-}}=\mathbb{R^3}\bigoplus \bigwedge^3 \mathbb{R^3}, \text{a parte ímpar}$$
 
 
 
@@ -55,7 +54,7 @@ O centro de um espaço é o subconjunto dos elementos que comutam com quaisquer 
 
 ## Enfim, os Quaternions
 
-Os Quaternions são definidos pelo conjunto $\mathbb{H}=${$$a+bi+cj+dk|a,b,c,d\in \mathbb{R}$$} onde vale que $$ij=k=-ji$$, $$jk = i=-kj$$ e $$ki=j=-ik$$  e $$i^2=j^2=k^2=ijk=-1$$. Leitores razoavelmente atentos perceberão que existe uma correspondência entre $$\mathbb{H}$$ e $$\mathbb{Cl_3}$$.
+Os Quaternions são definidos pelo conjunto $$\mathbb{H}={$$a+bi+cj+dk|a,b,c,d\in \mathbb{R}$$} onde vale que $$ij=k=-ji$$, $$jk = i=-kj$$ e $$ki=j=-ik$$  e $$i^2=j^2=k^2=ijk=-1$$. Leitores razoavelmente atentos perceberão que existe uma correspondência entre $$\mathbb{H}$$ e $$\mathbb{Cl_3}$$.
 
 | $$\mathbb{H}$$ | $$\mathbb{Cl_3}$$ |
 | -------------- | ----------------- |
