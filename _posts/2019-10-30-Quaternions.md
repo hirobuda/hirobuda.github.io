@@ -3,8 +3,6 @@ layout: post
 title: Quaternions
 ---
 
-# Quaternions
-
 Hoje vou abordar a Álgebra Geométrica sobre o  $$\mathbb{R}^{3}$$. Mas antes, algumas considerações. Vou mudar um pouco a notação usada, além de possívelmente começar a escrever "Álgebras de Clifford" mais do que "Álgebra Geométrica", ficando mais próximo dos livros que tenho lido. Quando me referir a uma álgebra de clifford no $$R^3$$ , por exemplo, vou usar $$\mathbb{Cl_{3}}$$, além de definir $$e_{i}e_{j}=e_{ij}$$ quando estivermos falando sobre os vetores da base ortonormal. Dito isso, vamos começar.
 
 ## A Álgebra $$\mathbb{Cl_3}$$
