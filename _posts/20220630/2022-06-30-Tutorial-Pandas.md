@@ -132,7 +132,7 @@ A partir desses
 .
 
 ```python
-data = pd.read_csv('/home/hiroshi/2022-1/curso_caifsc/hygdata_v3.csv')
+data = pd.read_csv('hygdata_v3.csv')
 df = pd.DataFrame(data)
 df.columns
 
