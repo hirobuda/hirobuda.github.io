@@ -67,7 +67,7 @@ df.plot()
 
 que nos retorna:
 
-![](images/20220630/plot1.png)
+![](/images/20220630/plot1.png)
 
 Num total de 4 linhas temos um belo plot dos nossos dados!
 
@@ -77,7 +77,7 @@ Também podemos plotar apenas uma coluna:
 df['data1'].plot()
 ```
 
-![](images/20220630/plot2.png)
+![](/images/20220630/plot2.png)
 
 Também é possível passar uma lista de colunas.
 
@@ -91,7 +91,7 @@ df['std'] = df.std(axis=1)
 ```
 
 
-![](images/20220630/df2.png)
+![](/images/20220630/df2.png)
 
 É possível fazer operações com as colunas:
 
@@ -99,7 +99,7 @@ df['std'] = df.std(axis=1)
 df['data1_norm'] = (df['data1'] - df['data1'].mean())/df['data1'].std()
 ```
 
-![](images/20220630/df3.png)
+![](/images/20220630/df3.png)
 
 ou aplicar funções(inclusive do numpy!) ao dataframe:
 
@@ -107,7 +107,7 @@ ou aplicar funções(inclusive do numpy!) ao dataframe:
 df['std_sqrd'] = df['std'].apply(lambda x:x**2)
 ```
 
-![](images/20220630/df4.png)
+![](/images/20220630/df4.png)
 
 Por fim, podemos criar o gráfico com barras de erro. O método `plot()`
 também recebe qualquer argumento da função plot do matplotlib, então 
@@ -118,7 +118,7 @@ df['mean'].plot(yerr=df['std'], marker ='D', title='Errorbar plot')
 ```
 
 
-![](images/20220630/plot3.png)
+![](/images/20220630/plot3.png)
 
 Isso é só o básico. Pandas pode ser tão complexo quanto seus dados
 precisarem e a [documentação](https://pandas.pydata.org/docs/getting_started/index.html#getting-started)
@@ -165,4 +165,4 @@ ax.set_ylim(18, -16)
 ax.set_yticks(np.linspace(20, -10, 3, endpoint=True))
 ```
 
-![](images/20220630/plot4.png)
+![](/images/20220630/plot4.png)
