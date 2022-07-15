@@ -36,7 +36,7 @@ df = pd.concat([data1,data2], axis=1)
 
 você verá algo como:
 
-![](assets/img/images/tutorial_pandas/df1.png)
+![](images/tutorial_pandas/df1.png)
 
 O comando `read_csv()` serve para abrir arquivos com dados e, apesar do
 nome, não precisamos usar apenas arquivos `.csv`. Caso você queria abrir
