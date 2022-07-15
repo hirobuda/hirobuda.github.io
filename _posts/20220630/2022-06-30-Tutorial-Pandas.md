@@ -1,3 +1,13 @@
+---
+title: Tutorial de Pandas
+author: Pedro Hiroshi Ely Ito
+date: 2022-06-30
+categories: [Python, Data]
+tags: [python, pandas, data]
+math: true
+mermaid: true
+---
+
 # Tutorial de Pandas
 
 ## Pandas:
