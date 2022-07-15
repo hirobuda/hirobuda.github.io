@@ -57,7 +57,7 @@ df.plot()
 
 que nos retorna:
 
-![](plot1.png)
+![](images/tutorial_pandas/plot1.png)
 
 Num total de 4 linhas temos um belo plot dos nossos dados!
 
