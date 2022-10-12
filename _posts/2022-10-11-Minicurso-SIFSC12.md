@@ -35,3 +35,5 @@ def hist_eq(img, nbins=2**16):
 
     return img_eq.reshape(img.shape)
 ```
+
+[Playlist do curso](https://youtube.com/playlist?list=PLeDDGtGlKHBKn2N1cPYsDUH-Q40tq5B1V)
