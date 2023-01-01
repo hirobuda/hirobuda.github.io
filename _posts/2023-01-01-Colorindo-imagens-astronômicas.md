@@ -30,7 +30,7 @@ que são praticamente todas que você vê todos os dias). Existe mais de uma for
 num computador, mas hoje vamos usar apenas uma: matrizes.
 
 Imagine que você queria explicar ao seu computador o que é uma imagem. Lembre-se, o seu computador só entende
-números e possui memória limitada(ele só consegue guardar uma quantidade finito de números). Uma possibilidade
+números e possui memória limitada(ele só consegue guardar uma quantidade finita de números). Uma possibilidade
 seria dividir essa imagem em pequenos quadradinhos e atribuir números a esses quadradinhos. Esses quadradinhos 
 seriam então elementos da imagem(em inglês *picture element*, ou *pixel*) e o número atribuido seria a
 intensidade desse pixel. A partir daí, basta guardar esses números em uma matriz nas posições corretas e agora
