@@ -1,3 +1,13 @@
+---
+title: Colorindo Imagens Astronômicas em Python
+author: Pedro Hiroshi Ely Ito
+date: 2023-01-01
+categories: [Python, Data, Astronomy, Image Processing]
+tags: [python, data, image, astronomy]
+math: true
+mermaid: true
+---
+
 # Colorindo Imagens Astronômicas em Python
 
 Durante a [SIFSC12](https://sifsc.ifsc.usp.br/) foi realizado um minicurso do [CAIFSC](https://instagram.com/caifsc)
