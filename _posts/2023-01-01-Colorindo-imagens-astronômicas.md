@@ -119,7 +119,7 @@ Você pode então ver as imagens com:
 show_img(imgs, 2, 3)#2 e 3 são o número de linhas e colunas
 ```
 
-![]("/images/20230101/1.png")
+![](/images/20230101/1.png)
 
 Muito emocionante, não? Não pare de ler, eu prometo que vai funcionar!
 
@@ -134,7 +134,7 @@ for i in range(6):
 plt.tight_layout()
 ```
 
-![]("/images/20230101/2.png")
+![](/images/20230101/2.png)
 
 Os [histogramas](https://pt.wikipedia.org/wiki/Histograma) das imagens apontam que a maioria dos pixels possui
 valor baixo. E agora?
@@ -177,13 +177,13 @@ for i in range(6):
 plt.tight_layout()
 ```
 
-![]("/images/20230101/3.png")
+![](/images/20230101/3.png)
 
 ```python
 show_img(imgs, 2, 3)
 ```
 
-![]("/images/20230101/4.png")
+![](/images/20230101/4.png)
 
 Bem melhor, não? Agora basta colocar uma imagem em cada canal e boom! Mas, espera aí...
 
@@ -215,7 +215,7 @@ channels = [red, green, blue]
 show_img(channels, 1, 3)
 ```
 
-![]("/images/20230101/5.png")
+![](/images/20230101/5.png)
 
 Agora, podemos finalmente jogar uma imagem em cada canal e partir pro abraço, certo? Não.
 
@@ -265,7 +265,7 @@ ax.set_xticks([])
 ax.set_yticks([])
 ```
 
-![]("/images/20230101/6.png")
+![](/images/20230101/6.png)
 
 Pronto, temos cores! Você pode fazer algumas coisas agora:
 
